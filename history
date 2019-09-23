@@ -2,3 +2,4 @@ https://ssh.cloud.google.com/cloudshell/editor?shellonly=true
 echo 'PS1="\w$ "' | tee -a .bashrc
 git clone https://github.com/secobau/lpic1
 find lpic1 | grep -v \.git 1> salida
+sudo cp -v etc/profile.d/history.sh /etc/profile.d/
