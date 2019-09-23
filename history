@@ -1,1 +1,2 @@
+echo 'PS1="\w$ "' | tee -a .bashrc
 git clone https://github.com/secobau/lpic1
