@@ -1,2 +1,8 @@
+https://ssh.cloud.google.com/cloudshell/editor?shellonly=true
 echo 'PS1="\w$ "' | tee -a .bashrc
 git clone https://github.com/secobau/lpic1
+find lpic1 | grep -v \.git 1> salida
+sudo cp -v lpic1/etc/profile.d/history.sh /etc/profile.d/
+. /etc/profile.d/history.sh
+source /etc/profile.d/history.sh
+cat 0< lpic1/etc/profile.d/history.sh | sudo tee -a .bashrc
