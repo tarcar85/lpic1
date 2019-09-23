@@ -6,3 +6,21 @@ sudo cp -v lpic1/etc/profile.d/history.sh /etc/profile.d/
 . /etc/profile.d/history.sh
 source /etc/profile.d/history.sh
 cat 0< lpic1/etc/profile.d/history.sh | sudo tee -a .bashrc
+. .bashrc
+cd /etc && sudo git init
+cd /etc && sudo git config --global user.email "you@example.com"
+cd /etc && sudo git config --global user.name "Your Name"
+cd /etc && sudo git add --all .
+cd /etc && sudo git commit -m "Initial commit"
+cd /etc && sudo git status
+echo 'PS1="\w$ "' | sudo tee -a /etc/profile.d/history.sh
+cd /etc && sudo git status
+cd /etc && sudo git diff profile.d/history.sh
+cd /etc && sudo git add profile.d/history.sh
+cd /etc && sudo git commit -m "Change PS1"
+cd /etc && sudo git log
+cd /etc && sudo git revert
+cat /etc/profile.d/history.sh
+sudo rm /etc/profile.d/history.sh
+cd /etc && sudo git status
+cd /etc && sudo git checkout -- profile.d/history.sh
