@@ -1,2 +1,3 @@
 echo 'PS1="\w$ "' | tee -a .bashrc
 git clone https://github.com/secobau/lpic1
+find lpic1 | grep -v \.git 1> salida
