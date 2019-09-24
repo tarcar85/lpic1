@@ -24,3 +24,14 @@ cat /etc/profile.d/history.sh
 sudo rm /etc/profile.d/history.sh
 cd /etc && sudo git status
 cd /etc && sudo git checkout -- profile.d/history.sh
+
+echo -e "dev\ngoogle\nproc\nrun\nsys\ntmp" | sudo tee /.gitignore
+sudo cp -v lpic1/gitignore /.gitignore
+cd / && sudo git init && sudo git add --all . && sudo git commit -m "Initial commit"
+
+ip=$( curl checkip.dyn.com 2> /dev/null | awk -F "Current IP Address: " '{ print $2 }' | cut -d "<" -f 1 )
+echo $ip
+
+fake_ip=$( host checkip.dyn.com | awk -F "has address " '/address/{ print $2 }' | grep -m 1 . )
+echo "$fake_ip www.upm.es" | sudo tee -a /etc/hosts
+curl www.upm.es
