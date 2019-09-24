@@ -1,0 +1,251 @@
+1  2019-09-24 08:00:58 tail -n1 .bashrc
+    2  2019-09-24 08:00:58 echo
+    3  2019-09-24 08:00:58 echo 'source /google/devshell/bashrc.google'
+    4  2019-09-24 08:00:58 echo 'PS1="\w$ "'
+    5  2019-09-24 08:00:58 echo 'PS1="\w$ "' 1>> .bashrc
+    6  2019-09-24 08:00:58 tail -n1 .bashrc
+    7  2019-09-24 08:00:58 source .bashrc
+    8  2019-09-24 08:00:58 echo 'PS1="\w$ "' | tee -a  .bashrc
+    9  2019-09-24 08:00:58 tail -n1 .bashrc
+   10  2019-09-24 08:00:58 echo 'PS1="\w$ "' | tee -a  .bashrc
+   11  2019-09-24 08:00:58 te
+   12  2019-09-24 08:00:58 tee
+   13  2019-09-24 08:00:58 echo 'PS1="\w$ "' | tee -a  .bashrc
+   14  2019-09-24 08:00:58 echo 'PS1="\w$ "'
+   15  2019-09-24 08:00:58 tail -n10 .bashrc
+   16  2019-09-24 08:00:58 vi .bashrc
+   17  2019-09-24 08:00:58 kill %1
+   18  2019-09-24 08:00:58 kill %2
+   19  2019-09-24 08:00:58 jobs
+   20  2019-09-24 08:00:58 pidof vi
+   21  2019-09-24 08:00:58 kill -9 413
+   22  2019-09-24 08:00:58 jobs
+   23  2019-09-24 08:00:58 tail -n1 .bashrc
+   24  2019-09-24 08:00:58 tail -n10 .bashrc
+   25  2019-09-24 08:00:58 top
+   26  2019-09-24 08:00:58 . .bashrc
+   27  2019-09-24 08:00:58 cat>script
+   28  2019-09-24 08:00:58 ls
+   29  2019-09-24 08:00:58 ls lp*
+   30  2019-09-24 08:00:58 git clone https://github.com/secobau/lpic1
+   31  2019-09-24 08:00:58 find lpic1
+   32  2019-09-24 08:00:58 find lpic1 | grep -v '\.git'
+   33  2019-09-24 08:00:58 echo $$
+   34  2019-09-24 08:00:58 cd lpic1/
+   35  2019-09-24 08:00:58 find | grep -v \.git
+   36  2019-09-24 08:00:58 sudo cp -v etc/profile.d/history.sh /etc/profile.d/
+   37  2019-09-24 08:00:58 cd.
+   38  2019-09-24 08:00:58 cd..
+   39  2019-09-24 08:00:58 cd ..
+   40  2019-09-24 08:00:58 cd etc
+   41  2019-09-23 10:57:10 . /etc/profile.d/history.sh
+   42  2019-09-23 10:57:40 history
+   43  2019-09-23 11:00:03 cat lpic1/etc/profile.d/history.sh
+   44  2019-09-23 11:01:01 cat
+   45  2019-09-23 11:03:05 cat 0< lpic1/etc/profile.d/history.sh
+     45  2019-09-23 11:03:05 cat 0< lpic1/etc/profile.d/history.sh
+   46  2019-09-23 11:05:54 cat lpic1/etc/profile.d/history.sh | tee -a .bashrc
+   47  2019-09-23 11:08:56 . .bashrc
+   48  2019-09-23 11:13:43 cd /etc/
+   49  2019-09-23 11:14:28 cd
+   50  2019-09-23 11:15:59 cd /etc && sudo git init
+   51  2019-09-23 11:20:16 cd /etc/ && sudo git add --all .
+   52  2019-09-23 11:21:01 cd /etc/ && git status
+   53  2019-09-23 11:24:25 cd /etc/ && sudo git commit -m "Initial commit"
+   54  2019-09-23 11:25:48 cd /etc/ && sudo git config --global user.email "you@example.com"
+   55  2019-09-23 11:26:10 cd /etc/ && sudo git config --global user.name "Your Name"
+   56  2019-09-23 11:26:18 cd /etc/ && sudo git commit -m "Initial commit"
+   57  2019-09-23 11:26:37 cd /etc/ && git status
+   58  2019-09-23 11:29:29 sudo vi /etc/profile.d/history.sh
+   59  2019-09-23 11:34:51 cd /etc/ && sudo git status
+   60  2019-09-23 11:37:13 cd /etc/ && sudo git diff profile.d/history.sh
+   61  2019-09-23 11:38:34 cd /etc/ && sudo git add profile.d/history.sh
+   62  2019-09-23 11:38:38 cd /etc/ && sudo git status
+   63  2019-09-23 11:39:18 cd /etc/ && sudo git commit -m "Change PS1"
+   64  2019-09-23 11:40:01 cd /etc/ && sudo git log -1
+   65  2019-09-23 11:43:33 cd /etc/ && sudo git revert e936257789b4e3883bdd
+   66  2019-09-23 11:45:22 cd /etc/ && sudo git status
+   67  2019-09-23 11:45:50 cat /etc/profile.d/history.sh
+   68  2019-09-23 11:46:09 cd /etc/ && sudo git log -2
+   69  2019-09-23 11:47:02 cd /etc/ && sudo git revert adde06
+   70  2019-09-23 11:47:35 cd /etc/ && sudo git status
+   71  2019-09-23 11:47:44 cd /etc/ && sudo git add profile.d/history.sh
+   72  2019-09-23 11:47:59 cat lpic1/etc/profile.d/history.sh
+   73  2019-09-23 11:48:02 cat /etc/profile.d/history.sh
+   74  2019-09-23 11:50:23 sudo rm /etc/profile.d/history.sh
+   75  2019-09-23 11:50:31 cd /etc/ && sudo git status
+   76  2019-09-23 11:52:28 cd /etc/ && sudo git checkout  -- profile.d/history.sh
+   77  2019-09-23 11:52:32 cd /etc/ && sudo git status
+   78  2019-09-23 12:34:22 cd / && sudo git init
+   79  2019-09-23 12:35:04 ls /
+   80  2019-09-23 12:50:13 echo -e "dev\ngoogle\nproc\nrun\nsys\ntmp" | sudo tee /.gitignore
+   81  2019-09-23 12:51:02 cat 0< /.gitignore
+   82  2019-09-23 12:51:32 cd / && sudo git status
+   83  2019-09-23 12:52:20 cd / && sudo git add --all .
+   84  2019-09-24 08:04:34 history
+   85  2019-09-24 08:17:42 hostname
+    86  2019-09-24 08:19:29 sss -oStrictHostKeyChecking=no $x hostname
+   87  2019-09-24 08:19:37 ssh -oStrictHostKeyChecking=no $x hostname
+   88  2019-09-24 08:31:50 ls
+   89  2019-09-24 08:35:28 fc -l
+   90  2019-09-24 08:45:21 ch
+   91  2019-09-24 08:45:26 fc -l
+   92  2019-09-24 08:58:51 ssh-keygen
+   93  2019-09-24 09:04:07 ls
+   94  2019-09-24 09:04:12 cd
+   95  2019-09-24 09:04:13 ls
+   96  2019-09-24 09:04:24 cd lpic1/
+   97  2019-09-24 09:04:25 ls
+   98  2019-09-24 09:04:27 cd..
+   99  2019-09-24 09:04:29 cd
+  100  2019-09-24 09:04:44 cd /home/tarcar85/.ssh/
+  101  2019-09-24 09:04:45 ls
+  102  2019-09-24 09:04:59 cat id_rsa
+  103  2019-09-24 09:05:14 cat id_rsa.pub
+  104  2019-09-24 09:07:02 cd
+  105  2019-09-24 09:07:05 /
+  106  2019-09-24 09:07:09 ls
+  107  2019-09-24 09:07:14 cd home
+  108  2019-09-24 09:07:33 cd
+  109  2019-09-24 09:07:37 .ssh/
+  110  2019-09-24 09:07:48 ls
+  111  2019-09-24 09:08:04 /.ssh/ç
+  112* 2019-09-24 09:08:06
+  113  2019-09-24 09:08:13 cd home
+  114  2019-09-24 09:08:18 cd/home
+  115  2019-09-24 09:08:24 cd /home/
+  116  2019-09-24 09:08:36 ls
+  117  2019-09-24 09:08:41 cd tarcar85/
+  118  2019-09-24 09:08:42 ls
+  119  2019-09-24 09:17:46 ks .ssh
+  120  2019-09-24 09:17:51 ls .ssh
+  121  2019-09-24 09:18:13 cag .shh/id_rsa.pub
+  122  2019-09-24 09:18:19 cat .shh/id_rsa.pub
+  123  2019-09-24 09:18:28 cat .ssh/id_rsa.pub
+  124  2019-09-24 09:23:29 id
+   125  2019-09-24 09:24:12 ssh ec2-user@34.245.13.105
+  126  2019-09-24 09:35:00 stat .ssh/id_rsa
+  127  2019-09-24 09:41:52 stat .ssh
+  128  2019-09-24 09:42:02 stat .ssh/id_rsa
+  129  2019-09-24 09:50:15 ls -a
+  130  2019-09-24 09:50:21 ls
+  131  2019-09-24 09:50:34 ls .ssh/
+  132  2019-09-24 09:50:47 cat .ssh/known_hosts
+  133  2019-09-24 09:50:55 stat .ssh/id_rsa
+  134  2019-09-24 09:55:25 pwd
+  135  2019-09-24 09:55:51 stat /home/tarcar85/
+  136  2019-09-24 09:56:22 ls
+  137  2019-09-24 09:56:27 cd /
+  138  2019-09-24 09:56:28 ls
+  139  2019-09-24 09:56:32 cd home/
+  140  2019-09-24 09:56:38 cd tarcar85/
+  141  2019-09-24 09:57:49 ls
+  142  2019-09-24 09:58:02 ls -l
+  143  2019-09-24 09:58:20 ls .ssh/
+  144  2019-09-24 09:58:33 ls etc/
+  145  2019-09-24 09:58:38 ls.ect/
+  146  2019-09-24 09:58:42 ls .etc/
+  147  2019-09-24 09:58:48 ls /etc/
+  148  2019-09-24 09:59:00 ls
+  149  2019-09-24 09:59:06 ls  /home
+  150  2019-09-24 09:59:08 ls
+  151  2019-09-24 09:59:29 stat /home/tarcar85/
+  152  2019-09-24 10:00:21 stat .
+  153  2019-09-24 10:00:52 stat /home/tarcar85/.
+  154  2019-09-24 10:03:48 stat /home/tarcar85/lpic1/..
+  155  2019-09-24 10:09:19 cd..
+  156  2019-09-24 10:09:21 cd
+  157  2019-09-24 10:09:23 cd .
+   158  2019-09-24 10:09:26 cd ..
+  159  2019-09-24 10:09:36 cd
+  160  2019-09-24 10:09:39 ls
+  161  2019-09-24 10:10:02 stat script
+  162  2019-09-24 10:13:48 chmod 2777 scipt
+  163  2019-09-24 10:13:52 chmod 2777 script
+  164  2019-09-24 10:13:56 stat script
+  165  2019-09-24 10:17:47 cat script
+  166  2019-09-24 10:19:25 chmod 777 script
+  167  2019-09-24 10:19:27 cat script
+  168  2019-09-24 10:19:31 stat script
+  169  2019-09-24 11:08:06 ls -l
+  170  2019-09-24 11:08:19 ls -l script
+  171  2019-09-24 11:08:56 ls -l .ssh
+  172  2019-09-24 11:09:08 ls -l .ssh -d
+  173  2019-09-24 11:12:42 ls -l /bin/passwd
+  174  2019-09-24 11:13:53 file /usr/bin/passwd
+  175  2019-09-24 11:14:04 ls -l /usr/bin/passwd
+  176  2019-09-24 11:14:23 stat /usr/bin/passwd
+  177  2019-09-24 11:18:54 passwd
+  178  2019-09-24 11:22:45 tr a-z A-Z
+  179  2019-09-24 11:23:30 tr ol 01
+  180  2019-09-24 11:24:08 tr 'aeiou' -d
+  181  2019-09-24 11:24:57 tr -d 'aeiou'
+  182  2019-09-24 11:43:08 echo $((128/6))
+  183  2019-09-24 11:54:45 md5sum .ssh/authorized_keys
+  184  2019-09-24 11:54:53 md5sum
+  185  2019-09-24 11:56:27 md5sum /home/tarcar85/lpic1/history
+  186  2019-09-24 11:57:07 sha512sum /home/tarcar85/lpic1/history
+  187  2019-09-24 11:57:31 echo c771dcb6e89b06184a984576f822fe83f294383cd018ff0e6cbb6cf6a7ae7e7b50a5eb59e589e8024c5d23c3055c68f92ad137a398dbecae211c5d182d4794be | wc
+  188  2019-09-24 12:13:02 grep tarcar85 /etc/shadow
+  189  2019-09-24 12:13:07 sudo grep tarcar85 /etc/shadow
+  190  2019-09-24 12:13:57 sudo passwd tarcar85
+  191  2019-09-24 12:14:46 sudo  grep tarcar85 /etc/shadow
+  192  2019-09-24 12:17:57 passwd
+  193  2019-09-24 12:18:24 touch etc/shadow
+  194  2019-09-24 12:18:31 touch /etc/shadow
+  195  2019-09-24 12:23:26 strace
+  196  2019-09-24 12:23:35 strace passwd
+  197  2019-09-24 12:24:34 sudo chmod -s /bin/passwd
+  198  2019-09-24 12:24:53 sudo chmod -s /usr/bin/passwd
+  199  2019-09-24 12:25:06 stat /usr/bin/passwd
+   200  2019-09-24 12:26:22 passwd
+  201  2019-09-24 12:27:43 strace passwd
+  202  2019-09-24 12:33:29 sudo chmod +s /usr/bin/passwd
+  203  2019-09-24 12:33:37 ls
+  204  2019-09-24 12:35:16 man find
+  205  2019-09-24 12:37:01 find
+  206  2019-09-24 12:40:03 sudo find / -perm /u+s,g+s,o+t 2> /dev/null
+  207  2019-09-24 12:40:43 sudo find /[!h] -perm /u+s,g+s,o+t 2> /dev/null
+  208  2019-09-24 12:40:57 sudo find /[!h]* -perm /u+s,g+s,o+t 2> /dev/null
+  209  2019-09-24 12:44:12 grep '/[^h].*'
+  210  2019-09-24 12:44:29 stat /bin/ping
+  211  2019-09-24 12:45:30 sudo find / -perm g+s 2> /dev/null | grep -v /home
+  212  2019-09-24 12:45:50 sudo find / -perm g+s 2> /dev/null | grep -v
+  213  2019-09-24 12:46:10 sudo find / -perm g+s 2> /dev/null | grep -v /home
+  214  2019-09-24 12:47:00 sudo find / -perm g+s 2> /dev/null | grep -v /home | grep -v /usr/local/lib/
+  215  2019-09-24 12:47:35 sudo find / -perm /g+s 2> /dev/null | grep -v /home | grep -v /usr/local/lib/
+  216  2019-09-24 12:50:49 sudo find / -perm /g+s 2> /dev/null | grep -v /home | grep -v /usr/local/
+  217  2019-09-24 12:51:34 grep staff /etc/group
+  218  2019-09-24 12:53:20 man grep
+  219  2019-09-24 12:54:52 sudo usermod -aG staff ec2-user
+  220  2019-09-24 12:55:29 sudo usermod -aG staff tarcar85
+  221  2019-09-24 12:55:40 grep staff /etc/group
+  222  2019-09-24 12:56:46 stat /usr/local/etc/
+  223  2019-09-24 12:57:09 sudo touch /usr/local/etc/prueba
+  224  2019-09-24 12:57:58 stat /usr/local/etc/prueba
+  225  2019-09-24 12:58:45 rm /usr/local/etc/prueba
+  226  2019-09-24 13:03:37 file /tmp
+  227  2019-09-24 13:07:15 stat /bin/passwd
+  228  2019-09-24 13:07:30 stat /usr/bin/passwd
+  229  2019-09-24 13:10:25 history
+  230  2019-09-24 13:10:50 stat /dev/stdin
+  231  2019-09-24 13:11:04 stat /proc/self/fd/0
+  232  2019-09-24 13:11:14 stat /dev/pts/1
+  233  2019-09-24 13:11:40 df
+  234  2019-09-24 13:12:08 stat /dev/sda
+  235  2019-09-24 13:12:29 la /dev/net/tun
+  236  2019-09-24 13:12:35 ls /dev/net/tun
+  237  2019-09-24 13:12:46 stat /dev/net/tun
+   238  2019-09-24 13:14:38 cp history /home/tarcar85/historiatotal
+  239  2019-09-24 13:15:32 ls -l /dev
+  240  2019-09-24 13:17:27 sudo touch /home/tarcar85/historiatotal
+  241  2019-09-24 13:17:30 cp history /home/tarcar85/historiatotal
+  242  2019-09-24 13:17:41 history
+  243  2019-09-24 13:18:03 sudo cp history /home/tarcar85/historiatotal
+  244  2019-09-24 13:18:25 ls historiatotal
+  245  2019-09-24 13:18:33 ls history
+  246  2019-09-24 13:18:39 find history
+  247  2019-09-24 13:18:46 find /  history
+  248  2019-09-24 13:18:56 ls
+  249  2019-09-24 13:19:06 ls lpic1/
+  250  2019-09-24 13:19:17 history
