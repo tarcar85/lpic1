@@ -146,7 +146,37 @@ du --inodes
 sudo du | sort -k 1 -n | tail
 sudo du --inodes | sort -k 1 -n | tail
 
-
 https://en.wikipedia.org/wiki/BusyBox
 
+ip r | grep eth0
+sysctl net.ipv4.ip_forward
+sudo sysctl net.ipv4.ip_forward=0
+sudo sysctl net.ipv4.ip_forward=1
 
+https://en.wikipedia.org/wiki/Address_Resolution_Protocol
+https://en.wikipedia.org/wiki/User_Datagram_Protocol
+https://en.wikipedia.org/wiki/Transmission_Control_Protocol
+https://en.wikipedia.org/wiki/IPv4
+https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol
+
+arp -a
+sudo apt-get install tcpdump -y
+sudo tcpdump -w tcp.log
+sudo tcpdump -XXn  -r tcp.log | less
+sudo apt-get install traceroute -y
+traceroute www.google.es
+host www.upm.es 8.8.8.8
+host www.upm.es 8.8.4.4
+host -a www.upm.es
+ping -c1 8.8.8.8
+curl 8.8.8.8
+ip r
+traceroute 8.8.8.8
+curl google.es
+cat /etc/resolv.conf
+echo nameserver 8.8.8.8 | sudo tee /etc/resolv.conf && sudo chattr +i /etc/resolv.conf
+lsattr /etc/resolv.conf
+echo dns-nameservers 8.8.8.8 8.8.4.4 | sudo tee -a /etc/network/interfaces # MORE OR LESS...
+sudo ifdown eth0 && sudo ifup eth0 # SI NO FUERA INMUTABLE... ME MODIFICARIA RESOLV.CONF
+
+service --status-all
