@@ -393,3 +393,4 @@
 echo 8.8.8.8 | sudo tee /etc/resolv.conf && sudo chattr +i /etc/resolv.conf  (el inmutable, esto no se podria cambiar)
 poner el DNS fijo a google
 
+www.wiki.debian.org
