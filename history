@@ -35,3 +35,71 @@ echo $ip
 fake_ip=$( host checkip.dyn.com | awk -F "has address " '/address/{ print $2 }' | grep -m 1 . )
 echo "$fake_ip www.upm.es" | sudo tee -a /etc/hosts
 curl www.upm.es
+
+scp test.original test.copia
+scp 128.3.45.25:test.original test.copia
+scp test.copia 128.3.45.25:test.original
+scp foo.myname.com:test.original test.copia
+scp test.copia foo.myname.com:test.original
+cat .ssh/id_rsa.pub
+id
+
+cat .ssh/authorized_keys
+stat .ssh/authorized_keys
+ln .ssh/authorized_keys otro
+stat otro
+ln -s .ssh/authorized_keys otro-simbolico
+stat otro-simbolico
+mv otro-simbolico .otro
+stat .otro
+
+pwd
+stat /home/ec2-user/
+stat .
+stat /home/ec2-user/.
+stat /home/ec2-user/.ssh/..
+mkdir subcarpeta
+stat /home/ec2-user/
+stat subcarpeta/..
+
+openssl rand -base64 32 | tr -d '+=/' | fold -w 16 | head -n 1
+https://en.wikipedia.org/wiki/Password_strength
+a7yhUhs098 -> 62^10 = 2^E
+62^L = 2^E
+E = 6 * L
+
+sudo grep ec2-user /etc/shadow
+sudo passwd ec2-user
+sudo grep ec2-user /etc/shadow
+touch /etc/shadow
+ls -l /bin/passwd
+stat /bin/passwd
+sudo chmod -s /bin/passwd
+stat /bin/passwd
+strace passwd
+sudo chmod +s /bin/passwd
+
+sudo find / -perm /g+s 2> /dev/null | grep -v /home | grep -v /usr/local/lib
+stat /usr/local/etc/
+file /usr/local/etc/
+grep staff /etc/group
+id
+sudo usermod -aG staff ec2-user
+
+ls -l /dev/stdin /dev/stdout /dev/stderr /dev/sda /dev/sda1 /dev/null /dev/zero
+
+sudo dd if=imagen.iso of=/dev/usb
+sudo dd if=/dev/zero of=/dev/usb
+sudo lsblk
+sudo dd if=/dev/sda of=_dev_sda_1b count=1
+strings _dev_sda_1b
+sudo od _dev_sda_1b
+sudo od -taz _dev_sda_1b
+sudo fdisk -l /dev/sda
+sudo dd if=/dev/zero of=/dev/sda count=1
+sudo fdisk -l /dev/sda
+sudo dd if=_dev_sda_1b of=/dev/sda count=1
+sudo fdisk -l /dev/sda
+
+
+
