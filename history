@@ -114,4 +114,39 @@ vmstat
 vmstat 1
 set -x && free && sudo swapoff -av && free && set +x
 
+sudo apt-get purge nano joe -y
+~$ crontab -e
+no crontab for sebastian_colomar - using an empty one
+crontab: installing new crontab
+~$ crontab -l
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+#
+# For more information see the manual pages of crontab(5) and cron(8)
+#
+# m h  dom mon dow   command
+0 1 * * * sudo apt-get update && sudo apt-get upgrade -y && sudo init 6
+*/10 10-11 * * * ( date && free && top -b -n 1 && vmstat 1 10 ) 1>> /tmp/monitoring
+0 11 * * 4 tar cfz /tmp/home.tgz /home/sebastian_colomar
+0 12 * * 3 tar cfz /tmp/home.tgz /home/sebastian_colomar
+
+ls -l /tmp/monitoring
+watch !!
+
+service cron status
+sudo service cron start
+sudo systemctl enable cron
+
+https://www.lpi.org/our-certifications/exam-101-objectives
+https://www.lpi.org/our-certifications/exam-102-objectives
+
+df
+df -i
+du
+du --inodes
+sudo du | sort -k 1 -n | tail
+sudo du --inodes | sort -k 1 -n | tail
+
+
+https://en.wikipedia.org/wiki/BusyBox
+
 
