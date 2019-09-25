@@ -264,3 +264,129 @@
   262  2019-09-24 13:46:37 df -h
   263  2019-09-24 13:57:45 sudo lsblk
   264  2019-09-25 08:11:32 history
+265  2019-09-25 08:22:53 sudo lsblk
+  266  2019-09-25 09:20:14 top
+  267  2019-09-25 09:27:11 nice top
+  268  2019-09-25 09:29:46 sudo top
+  269  2019-09-25 09:31:47 sudo nice -n -19 top
+  270  2019-09-25 09:33:27 ps
+  271  2019-09-25 09:33:32 nice top
+  272  2019-09-25 09:34:24 free
+  273  2019-09-25 09:40:21 vmstat
+  274  2019-09-25 09:41:30 vmstat -s
+  275  2019-09-25 09:41:47 vmstat -d
+  276* 2019-09-25 09:43:08
+  277  2019-09-25 09:50:38 vmstat  1
+  278  2019-09-25 09:52:07 swap
+  279* 2019-09-25 09:52:24
+  280  2019-09-25 09:53:01 swapon -s
+  281  2019-09-25 09:53:36 free $$ swapoff -av
+  282  2019-09-25 09:53:47 free && swapoff -av
+  283  2019-09-25 09:54:29 set -x && free && sudo swapoff -av && free && set +x
+  284  2019-09-25 09:54:57 sudo swapon -av
+  285  2019-09-25 09:54:59 free
+  286  2019-09-25 09:55:21 vmstat -d
+  287  2019-09-25 09:55:31 vmstat  1
+  288  2019-09-25 10:17:50 sudo apt-get purge nano joe
+  289  2019-09-25 10:19:36 crontab -l
+  290  2019-09-25 10:20:06 crontab -e
+  291  2019-09-25 10:36:37 crontab -l
+  292  2019-09-25 10:37:46 date
+  293  2019-09-25 10:37:54 crontab -l
+  294  2019-09-25 10:42:21 ls /tmp/
+  295  2019-09-25 10:42:39 sudo bash
+  296  2019-09-25 10:51:44 crontab -l
+  297  2019-09-25 10:52:28 crontab
+  298  2019-09-25 10:52:39 crontab -l
+  299  2019-09-25 10:52:47 crontab -e
+  300  2019-09-25 10:56:59 crontab -l
+  301  2019-09-25 10:57:25 ( date && free && top -b -n 1 && vmstat 1 10 ) 1>> /tmp/monitoring
+  302  2019-09-25 10:57:46 tail -f /tmp/monitoring
+  303  2019-09-25 10:59:52 crontab -l
+  304  2019-09-25 11:00:09 crontab -e
+  305  2019-09-25 11:01:05 tail -f /tmp/monitoring
+  306  2019-09-25 11:02:14 crontab -e
+  307  2019-09-25 11:02:46 tail -f /tmp/monitoring
+  308* 2019-09-25 11:03:03
+  309  2019-09-25 11:03:09 crontab -l
+  310  2019-09-25 11:03:39 sudo service cron start
+  311  2019-09-25 11:03:58 ls -l /tmp/monitoring
+  312  2019-09-25 11:04:08 watch ls -l /tmp/monitoring
+  313  2019-09-25 11:05:44 ls -l /tmp/monitoring
+  314  2019-09-25 11:05:48 tail -f /tmp/monitoring
+  315  2019-09-25 11:10:17 crontab -l
+  316  2019-09-25 11:13:00 crontab -e
+  317  2019-09-25 11:14:13 rm /tmp/monitoring
+  318  2019-09-25 11:14:15 crontab -e
+  319  2019-09-25 11:15:00 crontab -l
+  320  2019-09-25 11:15:06 crontab -e
+  321  2019-09-25 11:15:23 crontab -l
+  322  2019-09-25 11:15:30 date
+  323  2019-09-25 11:16:06 tail -f /tmp/monitoring
+  324  2019-09-25 11:18:01 ls -l /tmp/monitoring
+  325  2019-09-25 11:18:21 tail -f /tmp/monitoring
+  326  2019-09-25 11:18:41 date
+  327  2019-09-25 11:19:33 tail -f /tmp/monitoring
+  328  2019-09-25 11:20:42 watch ls -l /tmp/monitoring
+  329  2019-09-25 11:21:01 ls /tmp/
+  330  2019-09-25 11:22:03 watch ls -l /tmp/monitoring
+  331  2019-09-25 11:22:07 ls /tmp/
+  332  2019-09-25 11:22:47 crontab -e
+  333  2019-09-25 11:24:11 crontab -l
+  334  2019-09-25 11:25:56 df
+  335  2019-09-25 11:26:37 ls /tmp/
+  336  2019-09-25 11:30:36 tail -f /tmp/monitoring
+  337  2019-09-25 11:31:38 ls /home/tarcar85/
+  338  2019-09-25 11:38:02 df -i
+  339  2019-09-25 11:39:30 touch brrr
+  340  2019-09-25 11:39:38 ls -l brrr
+  341  2019-09-25 11:39:51 df -i
+  342  2019-09-25 11:44:57 du
+  343  2019-09-25 11:45:09 du -i
+  344  2019-09-25 11:45:16 du
+  345  2019-09-25 11:45:33 du --inodes
+  346  2019-09-25 11:45:50 ls /home/tarcar85/
+  347  2019-09-25 11:45:59 /ls
+  348  2019-09-25 11:46:04 cd /tmp/
+  349  2019-09-25 11:46:05 ls
+  350  2019-09-25 11:46:16 ls monitoring
+  351  2019-09-25 11:46:27 tail monitoring
+  352  2019-09-25 11:46:35 ls -l monitoring
+  353  2019-09-25 11:46:41 ls -l home.tgz
+  354  2019-09-25 11:47:07 tail monitoring
+  355  2019-09-25 11:48:10 vi monitoring
+  356  2019-09-25 11:48:28 ls -l monitoring
+  357  2019-09-25 11:48:38 cat monitoring
+  358  2019-09-25 11:49:43 sudo du | sort -k l -n | tail
+  359  2019-09-25 11:49:51 sudo du | sort -k 1 -n | tail
+  360  2019-09-25 11:50:19 sudo du --inodes | sort -k 1 -n | tail
+  361  2019-09-25 12:22:51 cd
+  362  2019-09-25 12:22:53 ls
+  363  2019-09-25 12:23:41 ip r
+  364  2019-09-25 12:25:07 ip r | grep eth 0
+  365  2019-09-25 12:25:10 ip r | grep eth0
+  366  2019-09-25 12:41:47 sysctl net.ipv4.ip_forward
+  367  2019-09-25 12:46:56 sysctl net.ipv4
+  368  2019-09-25 12:47:15 sysctl net.ipv4.ip_forward
+  369  2019-09-25 12:54:38 arp
+  370  2019-09-25 12:55:02 arp -a
+  371  2019-09-25 12:55:42 ip r | grep eth0
+  372  2019-09-25 13:15:08 sudo apt-get  install tcpdump -y
+  373  2019-09-25 13:15:51 sudo tcpdump -w tcp.log
+  374  2019-09-25 13:16:25 sudo tcpdump -XXn -r tcp.log | less
+  375  2019-09-25 13:28:49 sudo tcpdump -w tcp.log
+  376  2019-09-25 13:29:34 sudo tcpdump -XXn -r tcp.log | less
+  377  2019-09-25 13:38:15 sudo apt-get install traceroute -y
+  378  2019-09-25 13:38:49 traceroute www.upm.es
+  379  2019-09-25 13:42:30 traceroute www.google.es
+  380  2019-09-25 13:42:41 traceroute www.google.com
+  381  2019-09-25 13:43:10 traceroute www.google.jp
+  382  2019-09-25 13:56:42 cat /etc/host
+  383  2019-09-25 13:56:47 cat /etc/hosts
+  384  2019-09-25 13:57:23 host www.upm.es 8.8.8.8
+  385  2019-09-25 13:58:35 host www.upm.es 8.8.4.4
+  386  2019-09-25 13:58:55 host www.upm.es
+  387  2019-09-25 13:59:04 host -a  www.upm.es
+  388  2019-09-25 13:59:33 cat etc/resolve.conf
+  389  2019-09-25 13:59:38 cat /etc/resolve.conf
+  390  2019-09-25 13:59:42 cat /etc/resolv.conf
