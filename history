@@ -180,3 +180,21 @@ echo dns-nameservers 8.8.8.8 8.8.4.4 | sudo tee -a /etc/network/interfaces # MOR
 sudo ifdown eth0 && sudo ifup eth0 # SI NO FUERA INMUTABLE... ME MODIFICARIA RESOLV.CONF
 
 service --status-all
+
+ssh-keygen
+gpg --symmetric --armor --output thales.txt thales
+cat 1> thales2.txt
+sudo apt-get install -y dos2unix
+dos2unix thales2.txt
+gpg --decrypt --output thales2 thales2.txt
+chmod 600 thales2
+ssh centos@thales1.gotdns.org -i thales -oStrictHostKeyChecking=no hostname
+ssh centos@thales2.gotdns.org -i thales -oStrictHostKeyChecking=no hostname
+
+host local.do
+ssh centos@thales1.gotdns.org -i thales
+ip r | grep eth1 && exit
+ssh centos@thales2.gotdns.org -i thales
+
+https://en.wikipedia.org/wiki/Regular_expression
+
