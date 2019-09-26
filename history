@@ -198,3 +198,4 @@ ssh centos@thales2.gotdns.org -i thales
 
 https://en.wikipedia.org/wiki/Regular_expression
 
+ssh centos@thales1.gotdns.org -i thales " echo $( cat .ssh/id_rsa.pub ) | tee .ssh/authorized_keys "
