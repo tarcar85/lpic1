@@ -421,3 +421,60 @@ www.wiki.debian.org
   417  2019-09-25 14:50:27 sudo apt-get ethtool -y
   418  2019-09-25 14:50:50 sudo apt-get install ethtool -y
   419  2019-09-26 08:07:39 history
+ 420  2019-09-26 08:22:41 ssh-keygen
+  421  2019-09-26 08:43:03 gpg --symmetric --armor --output hola.txt hola
+  422  2019-09-26 08:43:18 cat hola.txt
+  423  2019-09-26 08:44:37 cat
+  424  2019-09-26 08:45:24 cat 1> thales.txt
+  425  2019-09-26 08:50:35 ls
+  426  2019-09-26 08:50:55 cat thales.txt
+  427  2019-09-26 08:52:47 sudo apt-get install -y dos2unix
+  428  2019-09-26 08:53:49 dos2unix thales.txt
+  429  2019-09-26 08:54:26 vi thales.txt
+  430  2019-09-26 08:58:47 diff thales.txt hola.txt
+  431  2019-09-26 08:59:03 sum thales.txt hola.txt
+  432  2019-09-26 08:59:14 md5 thales.txt hola.txt
+  433  2019-09-26 08:59:20 md5sum thales.txt hola.txt
+  434  2019-09-26 09:00:05 man gpg
+  435  2019-09-26 09:01:55 gpg --decrypt --output thales thales.txt
+  436  2019-09-26 09:02:10 cat thales
+  437  2019-09-26 09:03:23 cat thales.txt
+  438  2019-09-26 09:04:16 ssh centos@thales1.gotdns.org -i thales -oStrictHostKeyCheking=no
+  439  2019-09-26 09:04:36 ssh centos@thales1.gotdns.org -i thales -oStrictHostKeyChecking=no
+  440  2019-09-26 09:06:40 stat thales
+  441  2019-09-26 09:07:09 chmod 600 thales
+  442  2019-09-26 09:07:23 ssh centos@thales1.gotdns.org -i thales -oStrictHostKeyChecking=no
+  443  2019-09-26 09:08:40 ssh centos@thales2.gotdns.org -i thales -oStrictHostKeyChecking=no
+  444  2019-09-26 09:08:56 ssh centos@thales2.gotdns.org -i thales -oStrictHostKeyChecking=no hostname
+  445  2019-09-26 09:09:13 ssh centos@thales1.gotdns.org -i thales -oStrictHostKeyChecking=no hostname
+  446  2019-09-26 09:09:41 cat thales
+  447  2019-09-26 09:23:58 ls unix2dos
+  448  2019-09-26 09:24:06 ls
+  449  2019-09-26 09:24:29 find unix2dos
+  450  2019-09-26 09:30:19 host local.do
+  451  2019-09-26 09:30:31 host local.net
+  452  2019-09-26 09:30:46 host lossur.com
+  453  2019-09-26 09:30:51 host lossur.es
+  454  2019-09-26 09:40:57 ssh centos@thales1.gotdns.org -i thales 'ip r'
+    454  2019-09-26 09:40:57 ssh centos@thales1.gotdns.org -i thales 'ip r'
+  455  2019-09-26 09:41:08 ssh centos@thales2.gotdns.org -i thales -oStrictHostKeyChecking=no
+  456  2019-09-26 09:41:45 ssh centos@thales1.gotdns.org -i thales -oStrictHostKeyChecking=no
+  457  2019-09-26 09:42:27 ssh centos@thales2.gotdns.org -i thales -oStrictHostKeyChecking=no
+  458  2019-09-26 10:31:42 exit
+  459  2019-09-26 11:35:53 ssh centos@thales02.gotdns.org -i thales -oStrictHostKeyChecking=no
+  460  2019-09-26 11:36:10 ssh centos@thales03.gotdns.org -i thales -oStrictHostKeyChecking=no
+  461  2019-09-26 11:39:43 ssh centos@thales03.gotdns.org -i thales
+  462  2019-09-26 11:40:32 cat .shh/id_rsa.pub
+  463  2019-09-26 11:40:39 cat .ssh/id_rsa.pub
+  464  2019-09-26 11:44:20 ssh centos@thales1.gotdns.org -i thales " echo $( cat .ssh/id_rsa.pub ) | tee .ssh/authorized_keys "
+  465  2019-09-26 11:45:18 ssh centos@thales03.gotdns.org -i thales " echo $( cat .ssh/id_rsa.pub ) | tee .ssh/authorized_keys "
+  466  2019-09-26 11:45:25 ssh centos@thales03.gotdns.org -i thales
+  467  2019-09-26 11:45:29 ssh centos@thales03.gotdns.org
+  468  2019-09-26 11:51:41 ssh centos@thales02.gotdns.org
+  469  2019-09-26 11:51:49 ssh centos@thales03.gotdns.org
+  470  2019-09-26 12:18:28 ssh centos@thales03.gotdns.org
+  471  2019-09-26 13:42:45 cat /etc/apt/sources.list
+  472  2019-09-26 14:04:59 mkdir /apt
+  473  2019-09-26 14:05:05 sudo mkdir /apt
+  
+  
