@@ -387,10 +387,37 @@
   385  2019-09-25 13:58:35 host www.upm.es 8.8.4.4
   386  2019-09-25 13:58:55 host www.upm.es
   387  2019-09-25 13:59:04 host -a  www.upm.es
-  388  2019-09-25 13:59:33 cat etc/resolve.conf
-  389  2019-09-25 13:59:38 cat /etc/resolve.conf
   390  2019-09-25 13:59:42 cat /etc/resolv.conf
 echo 8.8.8.8 | sudo tee /etc/resolv.conf && sudo chattr +i /etc/resolv.conf  (el inmutable, esto no se podria cambiar)
 poner el DNS fijo a google
 
 www.wiki.debian.org
+  391  2019-09-25 13:59:42 cat /etc/resolv.conf
+  392  2019-09-25 14:00:33 ping -c1  169.254.168.254
+  393  2019-09-25 14:00:54 ping -c1  169.254.169.254
+  394  2019-09-25 14:01:02 ping -c4 169.254.169.254
+  395  2019-09-25 14:08:26 host upm.es 8.8.8.8
+  396  2019-09-25 14:08:47 ping -c1 8.8.8.8
+  397  2019-09-25 14:08:56 history
+  398  2019-09-25 14:09:51 curl 8.8.8.8
+  399  2019-09-25 14:12:21 man ip
+  400  2019-09-25 14:12:54 netstat -r -n
+  401  2019-09-25 14:16:57 cat/etc/ resolv.conf
+  402  2019-09-25 14:17:04 cat /etc/resolv.conf
+  403  2019-09-25 14:23:28 echo 8.8.8.8 | sudo tee /etc/resolv.conf &&
+  404  2019-09-25 14:23:33 echo 8.8.8.8 | sudo tee /etc/resolv.conf
+  405  2019-09-25 14:24:37 echo 8.8.8.8 | sudo tee /etc/resolv.conf && sudo chattr +1 /etc/resolv.conf
+  406  2019-09-25 14:24:48 curl 8.8.8.8
+  407  2019-09-25 14:24:52 cat /etc/resolv.conf
+  408  2019-09-25 14:29:45 lsattr /etc/resolv.conf
+  409  2019-09-25 14:33:09 ntp.conf
+  410  2019-09-25 14:35:38 host -a www.upm.es
+  411  2019-09-25 14:37:34 echo nameserver 8.8.8.8 | sudo tee /etc/resolv.conf && sudo chattr +i /etc/resolv.conf
+  412  2019-09-25 14:37:38 host -a www.upm.es
+  413  2019-09-25 14:38:49 cat /etc/network
+  414  2019-09-25 14:38:55 cat /etc/networks
+  415  2019-09-25 14:42:19 cat /etc/network/interfaces
+  416  2019-09-25 14:50:18 sudo apt-get ethtool
+  417  2019-09-25 14:50:27 sudo apt-get ethtool -y
+  418  2019-09-25 14:50:50 sudo apt-get install ethtool -y
+  419  2019-09-26 08:07:39 history
