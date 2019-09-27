@@ -214,6 +214,17 @@ https://www.vagrantup.com/downloads.html
 https://www.virtualbox.org/wiki/Downloads
 https://git-scm.com/download/
 
+https://www.vagrantup.com/docs/virtualbox/configuration.html
+https://www.vagrantup.com/docs/virtualbox/networking.html
+https://www.vagrantup.com/docs/boxes.html
+https://app.vagrantup.com/debian
+https://app.vagrantup.com/centos
+https://app.vagrantup.com/ubuntu
+
+https://en.wikipedia.org/wiki/Debian
+https://en.wikipedia.org/wiki/Debian_version_history
+
+
 vagrant plugin install virtualbox
 git clone https://gicd lpic1/thub.com/secobau/lpic1
 cd lpic1 && vagrant up --parallel
