@@ -231,3 +231,9 @@ sudo chmod +x /usr/local/sbin/tcpdump.sh
 sudo systemctl enable tcpdump.service
 sudo init 6
 
+sudo grep tcpdump.sh /var/log/messages | less
+sudo tail --follow /var/log/messages | grep tcpdump.sh
+sudo grep tcpdump.sh /var/log/messages | tail
+pidof tcpdump
+sudo tcpdump -XXn -r /var/log/tcpdump/*.pcap | less 
+
