@@ -4,7 +4,7 @@ Vagrant.configure("2") do |config|
       v.name = "vagrant_mgmt"
       v.linked_clone = true
       v.gui = false
-      v.default_nic_type = "virtio-net"
+      #v.default_nic_type = "virtio-net"
       v.customize ["modifyvm", :id, "--cpuexecutioncap", "50"]
       v.memory = 512
       v.cpus = 1
