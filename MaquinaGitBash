@@ -1,0 +1,90 @@
+ history
+    1  ls
+    2  cd Desktop/
+    3  git version
+    4  git clone http://github.com/secobau/lpic1
+    5  ls
+    6  cd lpic1/
+    7  ls
+    8  vagrant status
+    9  vagrant
+   10  vagrant plugin install virtualbox
+   11  vargrant up --parallel
+   12  vagrant up --parallel
+   13  ls
+   14  git pull
+   15  git show
+   16  vagrant up --parallel
+   17  git pull
+   18  git show
+   19  vagrant up --parallel
+   20  vagrant status
+   21  sed -i 107d c:/users/alumno/.vagrant.d/gems/2.4.6/gems/virtualbox-0.8.6/lib/virtualbox/com/ffi/util.rb
+   22  vagrant status
+   23  vagrand ssh mgmt
+   24  vagrand ssh mgmt
+   25  vagrant ssh mgmt
+   26  vagrant ssh mgmt
+   27  vagrant destroy -f
+   28  git pull
+   29  git show
+   30  vagrant up --parallel
+   31  vagrant status
+   32  vagrant ssh
+   33  vagrant ssh mgmt
+   34  vagrant destroy -f
+   35  git pull
+   36  git show
+   37  vagrant up --parallel
+   38  vagrant destroy -f
+   39  git pull
+   40  git show
+   41  git pull
+   42  git show
+   43  vagrant up --parallel
+   44  vagrant ssh mgmt
+   45  vagrant destroy -f
+   46  git pull
+   47  git show
+   48  vagrant up --parallel
+   49  vagrant destroy -f
+   50  git pull
+   51  vagrant up --parallel
+   52  vagrant status
+   53  vagrant destroy -f
+   54  history
+   55  git pull
+   56  vagrant up --parallel
+   57  git -h
+   58  git -ma
+   59  git --man
+   60  git --help
+   61  cd..
+   62  cd ..
+   63  mkdir Vagrand
+   64  cd Vagrand/
+   65  git clone http://github.com/secobau/lpic1
+   66  ls
+   67  cp lpic1/Vagrantfile .
+   68  ls
+   69  vagrant up --parallel
+   70  vagrant destroy -f
+   71  git pull
+   72  cd lpic1/
+   73  git pull
+   74  cd ..
+   75  vagrant up --parallel
+   76  vagrant ssh mgmt
+   77  vagrant ssh mgmt -c " ls -l /usr/local/sbin "
+   78  vagrant destroy -f
+   79  cp lpic1/Vagrantfile  .
+   80  mkdir Vagrant && cd Vagrant && git clone https://github.com/secobau/lpic1
+   81  ls
+   82  cd..
+   83  cd ..
+   
+   FUNCIONA
+   84  mkdir Vagrant && cd Vagrant && git clone https://github.com/secobau/lpic1
+   85  cp lpic1/Vagrantfile . && vagrant up --parallel
+   86  history
+
