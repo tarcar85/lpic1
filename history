@@ -220,3 +220,14 @@ cd lpic1 && vagrant up --parallel
 vagrant status
 vagrant ssh mgmt -c ' git version '
 vagrant destroy -f
+
+https://en.wikipedia.org/wiki/Runlevel
+https://en.wikipedia.org/wiki/Systemd
+
+test -d lpic1 && cd lpic1 && git pull
+test -d lpic1 || git clone https://github.com/secobau/lpic1 && cd lpic1
+sudo cp -rv * /
+sudo chmod +x /usr/local/sbin/tcpdump.sh
+sudo systemctl enable tcpdump.service
+sudo init 6
+
