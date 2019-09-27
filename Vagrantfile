@@ -16,7 +16,7 @@ Vagrant.configure("2") do |config|
       netmask: "255.255.255.0",
       nic_type: "virtio"
     mgmt.vm.provision "file", 
-      source: "../lpic1/*",
+      source: "lpic1",
       destination: "lpic1"
     mgmt.vm.provision "shell", inline: <<-HASTAQUI
       #sudo yum update -y && sudo yum install -y git
