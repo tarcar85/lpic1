@@ -1,1 +1,108 @@
-
+  1  2019-09-27 06:47:54 cat
+    2  2019-09-27 06:47:54 cat .ssh/authorized_keys
+    3  2019-09-27 06:47:54 exit
+    4  2019-09-27 06:47:54 cat .ssh/authorized_keys
+    5  2019-09-27 06:47:54 exit
+    6  2019-09-27 06:47:54 ls
+    7  2019-09-27 06:47:54 ip config
+    8  2019-09-27 06:47:54 ip
+    9  2019-09-27 06:47:54 ip -r
+   10  2019-09-27 06:47:54 ip r
+   11  2019-09-27 06:47:54 ip r | grep eth1
+   12  2019-09-27 06:47:54 sudo yum remove -y do-agent && curl -sSL https://repos.insights.digitalocean.com/install.sh | sudo bash
+   13  2019-09-27 06:47:54 sudo yum update -y && sudo yum install -y git
+   14  2019-09-27 06:47:54 username=tarcar85
+   15  2019-09-27 06:47:54 repo=bind
+   16  2019-09-27 06:47:54 branch=$username
+   17  2019-09-27 06:47:54 rm -rf $repo && git clone --single-branch --branch $branch https://github.com/$username/$repo && cd $repo && source setup.sh
+   18  2019-09-26 10:21:20 cd etc
+   19  2019-09-26 10:21:25 cd /etc
+   20  2019-09-26 10:21:27 ls
+   21  2019-09-26 10:21:43 cd named
+   22  2019-09-26 10:21:46 cd /named
+   23  2019-09-26 10:22:05 cd /etc/named
+   24  2019-09-26 10:22:12 sudo /etc/named
+   25  2019-09-26 10:22:18 cd
+   26  2019-09-26 10:22:37 cd /etc/named
+   27  2019-09-26 10:22:43 ls /etc/named
+   28  2019-09-26 10:22:53 sudo ls /etc/named
+   29  2019-09-26 10:23:05 sudo ls /etc/named/arpa
+   31  2019-09-26 10:26:30 sudo vi /etc/named/domain
+   32  2019-09-26 10:29:00 ping THALES03
+   33  2019-09-26 10:29:13 ping -c1 THALES03
+   34  2019-09-26 10:29:18 ping -c3 THALES03
+   35  2019-09-26 10:29:22 ping -c3 THALES02
+   36  2019-09-26 10:29:25 ping -c3 THALES04
+   37  2019-09-26 10:30:08 sudo service name restart
+   38  2019-09-26 10:30:16 sudo service eth1 restart
+   39  2019-09-26 10:30:34 sudo service eth1
+   40  2019-09-26 10:30:42 sudo service eth1 restart
+   41  2019-09-26 10:30:58 sudo service eth0 restart
+   42  2019-09-26 10:31:05 sudo service restart
+   43  2019-09-26 10:31:09 restart
+   44  2019-09-26 10:31:17 exit
+   45  2019-09-26 10:40:59 sudo yum remove -y do-agent && curl -sSL https://repos.insights.digitalocean.com/install.sh | sudo bash
+   46  2019-09-26 10:41:45 username=tarcar85
+   47  2019-09-26 10:41:45 repo=bind
+   48  2019-09-26 10:41:45 branch=$username
+   49  2019-09-26 10:41:45 rm -rf $repo && git clone --single-branch --branch $branch https://github.com/$username/$repo && cd $repo && source setup.sh
+   50  2019-09-26 10:31:45 ping THALES02
+   51  2019-09-26 10:31:54 sudo service THALES01  restart
+   52  2019-09-26 10:32:08 sudo service arpa  restart
+   53  2019-09-26 10:32:17 sudo service dns restart
+   54  2019-09-26 10:32:36 cd /et c
+   55  2019-09-26 10:32:40 cd /etc
+   56  2019-09-26 10:32:41 ls
+   57  2019-09-26 10:32:48 hostname
+   58  2019-09-26 10:32:53 hsts
+   59  2019-09-26 10:32:59 host
+   60  2019-09-26 10:33:04 cat host
+   61  2019-09-26 10:33:13 vi host
+   62  2019-09-26 10:33:27 cd /etc
+   63  2019-09-26 10:33:29 ls
+   64  2019-09-26 10:33:48 cd
+   65  2019-09-26 10:34:03 cat /etc/resolv.conf
+   66  2019-09-26 10:34:45 host thales03
+   67  2019-09-26 10:34:49 host thales02
+   68  2019-09-26 10:34:52 host thales03
+   69  2019-09-26 10:38:59 sudo vi /etc/named/arpa
+   70  2019-09-26 10:40:05 sudo vi /etc/named/domain
+   71  2019-09-26 10:40:44 # bind
+   72  2019-09-26 10:40:44 ```bash
+   73  2019-09-27 06:47:54 sudo yum remove -y do-agent && curl -sSL https://repos.insights.digitalocean.com/install.sh | sudo bash
+   74  2019-09-27 06:47:54 sudo yum update -y && sudo yum install -y git
+   75  2019-09-27 06:47:54 username=tarcar85
+   76  2019-09-27 06:47:54 repo=bind
+77  2019-09-27 06:47:54 branch=$username
+   78  2019-09-27 06:47:54 rm -rf $repo && git clone --single-branch --branch $branch https://github.com/$username/$repo && cd $repo && source setup.sh
+   79  2019-09-27 06:47:54 ```
+   80  2019-09-26 10:43:35 restart
+   81  2019-09-26 10:43:45 ping THALES02
+   82  2019-09-26 10:53:43 username=tarcar85
+   83  2019-09-26 10:53:43 repo=bind
+   84  2019-09-26 10:53:43 branch=$username
+   85  2019-09-26 10:53:43 rm -rf $repo && git clone --single-branch --branch $branch https://github.com/$username/$repo && cd $repo && source setup.sh
+   86  2019-09-26 10:57:11 username=tarcar85
+   87  2019-09-26 10:57:11 repo=bind
+   88  2019-09-26 10:57:11 branch=$username
+   89  2019-09-26 10:57:11 rm -rf $repo && git clone --single-branch --branch $branch https://github.com/$username/$repo && cd $repo && source setup.sh
+   90  2019-09-26 10:58:21 cat /etc/resolv.conf
+   91  2019-09-26 10:58:42 hostname
+   92  2019-09-26 10:58:48 branch=$username
+   93  2019-09-26 10:58:57 ping THALES02
+   94  2019-09-26 10:59:21 host THALES03
+   95  2019-09-26 11:00:05 host google.es
+   96  2019-09-26 11:00:12 host THALES03
+   97  2019-09-26 11:00:14 host THALES02
+   98  2019-09-26 11:00:21 ping THALES02
+   99  2019-09-26 11:01:18 host 10.133.222.6
+  100  2019-09-26 11:28:13 ping THALES02
+  101  2019-09-26 11:42:06 exit
+  102  2019-09-27 06:49:34 git
+  103  2019-09-27 06:49:46 sudo yum install -y git
+  104  2019-09-27 06:50:33 git clone https://github.com/secobau/lpic1
+  105  2019-09-27 06:51:05 find | grep -v \.git
+  106  2019-09-27 06:51:45 sudo cp -rv * /
+  107  2019-09-27 06:52:30  cd lpic1/
+  108  2019-09-27 06:52:33 sudo cp -rv * /
+  109  2019-09-27 06:53:16 history
