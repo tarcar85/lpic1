@@ -204,3 +204,27 @@
   204  2019-09-27 08:22:11 ls /var/log/tcpdump/
   205  2019-09-27 08:22:46 sudo tail --follow /var/log/messages | grep tcpdump.sh
   206  2019-09-27 11:08:36 history
+  207  2019-09-27 12:10:36 exit
+  208  2019-09-27 12:11:42 nohup curl www.upm.es
+  209  2019-09-27 12:11:52 vi nohup.out
+  210  2019-09-27 12:12:41 vi script
+  211  2019-09-27 12:14:49 ./script
+  212  2019-09-27 12:14:55 sudo ./script
+  213  2019-09-27 12:15:23 chmod -x script
+  214  2019-09-27 12:15:26 ./script
+  215  2019-09-27 12:15:36 chmod -777 script
+  216  2019-09-27 12:15:38 ./script
+  217  2019-09-27 12:17:57 chmod -w script
+  218  2019-09-27 12:18:00 ./script
+  219  2019-09-27 12:18:05 sudo ./script
+  220  2019-09-27 12:18:23 nohup ./script
+  221  2019-09-27 12:18:32 ls script
+  222  2019-09-27 12:19:04 ls - l script
+  223  2019-09-27 12:19:16 ls  l script
+  224  2019-09-27 12:19:22 ls -l script
+  225  2019-09-27 12:19:59 chmod 2777 script
+  226  2019-09-27 12:20:01 ls -l script
+  227  2019-09-27 12:20:13 ./script
+  228  2019-09-27 12:20:30 nohup ./script
+  229  2019-09-27 12:20:38 nohup ./script &
+  230  2019-09-27 12:20:55 history
