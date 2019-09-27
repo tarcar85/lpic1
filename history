@@ -226,7 +226,7 @@ https://en.wikipedia.org/wiki/Debian_version_history
 
 
 vagrant plugin install virtualbox
-git clone https://gicd lpic1/thub.com/secobau/lpic1
+git clone https://github.com/secobau/lpic1
 cd lpic1 && vagrant up --parallel
 vagrant status
 vagrant ssh mgmt -c ' git version '
