@@ -4,7 +4,7 @@ Vagrant.configure("2") do |config|
       v.name = "vagrant_mgmt"
       v.linked_clone = true
       v.gui = false
-      #v.default_nic_type = "virtio-net"
+      v.default_nic_type = "virtio"
       v.customize ["modifyvm", :id, "--cpuexecutioncap", "50"]
       v.memory = 512
       v.cpus = 1
@@ -14,7 +14,7 @@ Vagrant.configure("2") do |config|
       virtualbox__intnet: "mgmt_net",
       ip: "10.255.255.2",
       netmask: "255.255.255.0",
-      nic_type: "virtio-net"
+      nic_type: "virtio"
     mgmt.vm.provision "shell", inline: <<-HASTAQUI
       #sudo yum update -y && sudo yum install -y git
       sudo apt-get update -y && sudo apt-get install -y git
