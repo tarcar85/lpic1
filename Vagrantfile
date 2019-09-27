@@ -9,6 +9,9 @@ Vagrant.configure("2") do |config|
       virtualbox__intnet: "mgmt_net",
       ip: "10.255.255.2",
       netmask: "255.255.255.0"
+    mgmt.vm.provision "shell", inline: <<-HASTAQUI
+      sudo yum update -y && sudo yum install -y git
+    HASTAQUI
   end
   config.vm.define "nginx" do |nginx|
     nginx.vm.provider "virtualbox" do |v|
