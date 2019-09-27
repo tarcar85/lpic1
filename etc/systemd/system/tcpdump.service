@@ -1,6 +1,6 @@
 [Unit]
 Description=TCPdump
-After=network.target
+After=network-online.target
 
 [Service]
 ExecStart=/usr/local/sbin/tcpdump.sh
