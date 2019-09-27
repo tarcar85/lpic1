@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
     mgmt.vm.provision "shell", inline: <<-HASTAQUI
       #sudo yum update -y && sudo yum install -y git
       sudo sed -i /security/d /etc/apt/sources.list*
-      sudo apt-get update -y && sudo apt-get install -y git
+      sudo apt-get update -y && sudo apt-get install -y --force-yes git
       test -d lpic1 && cd lpic1 && git pull
       test -d lpic1 || git clone https://github.com/secobau/lpic1 && cd lpic1
       sudo cp -rv * /
