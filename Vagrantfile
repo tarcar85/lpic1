@@ -19,14 +19,14 @@ Vagrant.configure("2") do |config|
       source: "lpic1",
       destination: "lpic1"
     mgmt.vm.provision "shell", inline: <<-HASTAQUI
-      #sudo yum update -y && sudo yum install -y git
-      sudo sed -i /security/d /etc/apt/sources.list*
+      #yum update -y && sudo yum install -y git
+      sed -i /security/d /etc/apt/sources.list*
       cd lpic1 && sudo cp -rv * /
-      sudo chmod +x /usr/local/sbin/tcpdump.sh
-      sudo chmod +x /etc/init.d/tcpdump.service
-      sudo update-rc.d tcpdump.service defaults
-      #sudo systemctl enable tcpdump.service
-      sudo init 6
+      chmod +x /usr/local/sbin/tcpdump.sh
+      chmod +x /etc/init.d/tcpdump.service
+      update-rc.d tcpdump.service defaults
+      #systemctl enable tcpdump.service
+      init 6
     HASTAQUI
   end
   config.vm.define "nginx" do |nginx|
@@ -49,15 +49,14 @@ Vagrant.configure("2") do |config|
       source: "lpic1",
       destination: "lpic1"
     nginx.vm.provision "shell", inline: <<-HASTAQUI
-      #sudo yum update -y && sudo yum install -y git
-      sudo sed -i /security/d /etc/apt/sources.list*
+      #yum update -y && sudo yum install -y git
+      sed -i /security/d /etc/apt/sources.list*
       cd lpic1 && sudo cp -rv * /
-      sudo chmod +x /usr/local/sbin/tcpdump.sh
-      sudo chmod +x /etc/init.d/tcpdump.service
-      sudo update-rc.d tcpdump.service defaults
-      #sudo systemctl enable tcpdump.service
-      id
-      sudo init 6
+      chmod +x /usr/local/sbin/tcpdump.sh
+      chmod +x /etc/init.d/tcpdump.service
+      update-rc.d tcpdump.service defaults
+      #systemctl enable tcpdump.service
+      init 6
     HASTAQUI
   end
 end
