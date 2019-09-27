@@ -21,6 +21,8 @@ Vagrant.configure("2") do |config|
     mgmt.vm.provision "shell", inline: <<-HASTAQUI
       #yum update -y && sudo yum install -y git
       sed -i /security/d /etc/apt/sources.list*
+      sudo apt-get update -y && sudo apt-get install -y --force-yes dos2unix
+      dos2unix $( find lpic1 )
       cd lpic1 && sudo cp -rv * /
       chmod +x /usr/local/sbin/tcpdump.sh
       chmod +x /etc/init.d/tcpdump.service
@@ -51,6 +53,8 @@ Vagrant.configure("2") do |config|
     nginx.vm.provision "shell", inline: <<-HASTAQUI
       #yum update -y && sudo yum install -y git
       sed -i /security/d /etc/apt/sources.list*
+      sudo apt-get update -y && sudo apt-get install -y --force-yes dos2unix
+      dos2unix $( find lpic1 )
       cd lpic1 && sudo cp -rv * /
       chmod +x /usr/local/sbin/tcpdump.sh
       chmod +x /etc/init.d/tcpdump.service
