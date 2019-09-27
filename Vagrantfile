@@ -15,12 +15,12 @@ Vagrant.configure("2") do |config|
       ip: "10.255.255.2",
       netmask: "255.255.255.0",
       nic_type: "virtio"
+    mgmt.vm.provision "file", 
+      source: "../lpic1",
+      destination: "lpic1"
     mgmt.vm.provision "shell", inline: <<-HASTAQUI
       #sudo yum update -y && sudo yum install -y git
       sudo sed -i /security/d /etc/apt/sources.list*
-      sudo apt-get update -y && sudo apt-get install -y --force-yes git
-      test -d lpic1 && cd lpic1 && git pull
-      test -d lpic1 || git clone https://github.com/secobau/lpic1 && cd lpic1
       sudo cp -rv * /
       sudo chmod +x /usr/local/sbin/tcpdump.sh
       #sudo systemctl enable tcpdump.service
