@@ -8,7 +8,9 @@ folder=/var/log/tcpdump ;
 
 test -d $folder || mkdir --parents $folder ;
 
-yum update -y && yum install -y tcpdump ;
+set +e && yum update -y && yum install -y tcpdump ;
+set +e && apt-get update -y && apt-get install -y --force-yes tcpdump ;
+set -e ;
 
 tcpdump --interface=any -C 10 -z gzip -w $folder/$(date +%F.%Hh%Mm).pcap ;
 
