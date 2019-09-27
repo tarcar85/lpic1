@@ -106,3 +106,101 @@
   107  2019-09-27 06:52:30  cd lpic1/
   108  2019-09-27 06:52:33 sudo cp -rv * /
   109  2019-09-27 06:53:16 history
+ 109  2019-09-27 06:53:16 history
+  110  2019-09-27 06:54:05 sudo chmod +x /usr/local/sbin/tcpdump.sh
+  111  2019-09-27 06:56:16 /etc/systemd/system/
+  112  2019-09-27 06:56:21 ls /etc/systemd/system/
+  113  2019-09-27 07:03:42 cat /etc/systemd/system/tcpdump.service
+  114  2019-09-27 07:12:57 cd /etc/systemd/system
+  115  2019-09-27 07:13:10 grep -ri network *
+  116  2019-09-27 07:13:22 service network status
+  117  2019-09-27 07:13:35 service network-online status
+  118  2019-09-27 07:14:11 find /etc/systemd/ | grep network-online
+  119  2019-09-27 07:14:14 find /etc/systemd/ | grep network
+  120  2019-09-27 07:14:27 find /usr/ | grep network-online
+  121  2019-09-27 07:14:44 find /usr/ | grep network.target
+  122  2019-09-27 07:14:59 vi /usr/lib/systemd/system/network-online.target
+  123  2019-09-27 07:15:42 vi /usr/lib/systemd/system/network.target
+  124  2019-09-27 07:16:53 vi /usr/lib/systemd/system/network-online.targetcd
+  125  2019-09-27 07:17:12 cd /lpic
+  126  2019-09-27 07:17:14 cd /lpic1
+  127  2019-09-27 07:17:27 git pull
+  128  2019-09-27 07:18:49 history
+  129  2019-09-27 07:19:49 cd ..
+  130  2019-09-27 07:20:01 cd
+  131  2019-09-27 07:20:10 cd lpic1/
+  132  2019-09-27 07:20:15 git pull
+  133  2019-09-27 07:21:03 ls
+  134  2019-09-27 07:22:17 sudo chmod +x /usr/local/sbin/tcpdump.sh
+  135  2019-09-27 07:22:43 sudo systemctl enable tcpdump.service
+  136  2019-09-27 07:23:32 fc -l
+  137  2019-09-27 07:23:40 ls
+  138  2019-09-27 07:23:44 cd history
+  139  2019-09-27 07:27:12 /etc/systemd/system/
+  140  2019-09-27 07:27:18 cd /etc/systemd/system/
+  141  2019-09-27 07:27:24 ls - l default.target
+  142  2019-09-27 07:27:35 ls -l default.target
+  143  2019-09-27 07:27:41 cd multi-user.target.wants/
+  144  2019-09-27 07:27:42 ls
+  145  2019-09-27 07:28:06 cat tcpdump.service
+  146  2019-09-27 07:28:30 cat sshd.service
+  147  2019-09-27 07:30:00 cat tcpdump.service
+  148  2019-09-27 07:31:22 cd
+  149  2019-09-27 07:31:25 ls
+  150  2019-09-27 07:31:27 cd lpic1/
+  151  2019-09-27 07:31:34 git pull
+  152  2019-09-27 07:32:27 test -d lpic1 && cd lpic1 && git pull
+  153  2019-09-27 07:32:40 test -d lpic1 || git clone https://github.com/secobau/lpic1 && cd lpic1
+  154  2019-09-27 07:32:50 sudo cp -rv * /
+  155  2019-09-27 07:33:01 sudo chmod +x /usr/local/sbin/tcpdump.sh
+  156  2019-09-27 07:33:09 sudo systemctl enable tcpdump.service
+  157  2019-09-27 07:33:23 cat tcpdump.service
+  158  2019-09-27 07:33:32 cd /etc/systemd/system/
+  159  2019-09-27 07:33:38 ls
+  160  2019-09-27 07:33:47 cat multi-user.target.wants/
+  161  2019-09-27 07:33:50 cd multi-user.target.wants/
+  162  2019-09-27 07:33:51 ls
+  163  2019-09-27 07:33:57 cat tcpdump.service
+  164  2019-09-27 07:34:11 sudo init 6
+  165  2019-09-27 07:35:08 service tcpdump status
+  166  2019-09-27 07:35:21 sudo bash
+  167  2019-09-27 07:40:56 cd
+  168  2019-09-27 07:41:06 test -d lpic1 && cd lpic1 && git pull
+  169  2019-09-27 07:41:07 test -d lpic1 || git clone https://github.com/secobau/lpic1 && cd lpic1
+  170  2019-09-27 07:41:07 sudo cp -rv * /
+  171  2019-09-27 07:41:07 sudo chmod +x /usr/local/sbin/tcpdump.sh
+  172  2019-09-27 07:41:07 sudo systemctl enable tcpdump.service
+  173  2019-09-27 07:41:24 sudo init 6
+  174  2019-09-27 07:42:42 sudo grep tcpdump.sh /var/log/messages | less
+  175  2019-09-27 07:44:04 pidof tcpdump
+  176  2019-09-27 07:44:48 sudo tail --follow /var/log/messages | tcpdump.sh
+  177  2019-09-27 07:45:33 pidof tcpdump
+  178  2019-09-27 07:45:55 sudo tail --follow /var/log/messages | grep tcpdump.sh
+  179  2019-09-27 07:46:01 sudo tail --follow /var/log/messages
+  180  2019-09-27 07:47:12 sudo grep tcpdump.sh /var/log/messages | tail
+  181  2019-09-27 07:47:44 sudo grep tcpdump.sh /var/log/messages |
+  182  2019-09-27 07:48:12 sudo grep tcpdump.sh /var/log/messages | tail
+  183  2019-09-27 07:48:46 pidof tcddump
+  184  2019-09-27 07:48:53 pidof tcdump
+  185  2019-09-27 07:49:06 ls /var/log/tcpdump/
+  186  2019-09-27 07:49:17 cd lpic1/
+  187  2019-09-27 07:49:27 test -d lpic1 && cd lpic1 && git pull
+  188  2019-09-27 07:49:28 test -d lpic1 || git clone https://github.com/secobau/lpic1 && cd lpic1
+  189  2019-09-27 07:49:29 sudo cp -rv * /
+  190  2019-09-27 07:49:29 sudo chmod +x /usr/local/sbin/tcpdump.sh
+   191  2019-09-27 07:49:29 sudo systemctl enable tcpdump.service
+  192  2019-09-27 07:49:46 test -d lpic1 && cd lpic1 && git pull
+  193  2019-09-27 07:49:46 test -d lpic1 || git clone https://github.com/secobau/lpic1 && cd lpic1
+  194  2019-09-27 07:49:47 sudo cp -rv * /
+  195  2019-09-27 07:49:48 sudo chmod +x /usr/local/sbin/tcpdump.sh
+  196  2019-09-27 07:49:48 sudo systemctl enable tcpdump.service
+  197  2019-09-27 07:50:07 sudo init 6
+  198  2019-09-27 07:51:05 history
+  199  2019-09-27 07:51:16 sudo tail --follow /var/log/messages | grep tcpdump.sh
+  200  2019-09-27 07:51:31 pidof tcdump
+  201  2019-09-27 07:51:52 ls /var/log/tcpdump/
+  202  2019-09-27 07:51:56 pidof tcdump
+  203  2019-09-27 07:52:01 pidof tcpdump
+  204  2019-09-27 08:22:11 ls /var/log/tcpdump/
+  205  2019-09-27 08:22:46 sudo tail --follow /var/log/messages | grep tcpdump.sh
+  206  2019-09-27 11:08:36 history
