@@ -41,7 +41,7 @@ Vagrant.configure("2") do |config|
     nginx.vm.network "private_network",
       virtualbox__intnet: "mgmt_net",
       ip: "10.255.255.4",
-      netmask: "255.255.255.0"
+      netmask: "255.255.255.0",
       nic_type: "virtio"
     nginx.vm.provision "file", 
       source: "../lpic1",
