@@ -3,14 +3,27 @@ Vagrant.configure("2") do |config|
     mgmt.vm.provider "virtualbox" do |v|
       v.name = "vagrant_mgmt"
       v.linked_clone = true
+      v.gui = false
+      v.default_nic_type = "virtio-net"
+      v.customize ["modifyvm", :id, "--cpuexecutioncap", "50"]
+      v.memory = 512
+      v.cpus = 1
     end
-    mgmt.vm.box = "centos/6"
+    mgmt.vm.box = "learnway/debian-squeeze"
     mgmt.vm.network "private_network",
       virtualbox__intnet: "mgmt_net",
       ip: "10.255.255.2",
-      netmask: "255.255.255.0"
+      netmask: "255.255.255.0",
+      nic_type: "virtio-net"
     mgmt.vm.provision "shell", inline: <<-HASTAQUI
-      sudo yum update -y && sudo yum install -y git
+      #sudo yum update -y && sudo yum install -y git
+      sudo apt-get update -y && sudo apt-get install -y git
+      test -d lpic1 && cd lpic1 && git pull
+      test -d lpic1 || git clone https://github.com/secobau/lpic1 && cd lpic1
+      sudo cp -rv * /
+      sudo chmod +x /usr/local/sbin/tcpdump.sh
+      #sudo systemctl enable tcpdump.service
+      #sudo init 6
     HASTAQUI
   end
   config.vm.define "nginx" do |nginx|
@@ -18,7 +31,7 @@ Vagrant.configure("2") do |config|
       v.name = "vagrant_nginx"
       v.linked_clone = true
     end
-    nginx.vm.box = "centos/6"
+    nginx.vm.box = "learnway/debian-squeeze"
     nginx.vm.network "private_network",
       virtualbox__intnet: "mgmt_net",
       ip: "10.255.255.4",
@@ -29,7 +42,7 @@ Vagrant.configure("2") do |config|
       v.name = "vagrant_php_fpm"
       v.linked_clone = true
     end
-    php_fpm.vm.box = "centos/6"
+    php_fpm.vm.box = "learnway/debian-squeeze"
     php_fpm.vm.network "private_network",
       virtualbox__intnet: "mgmt_net",
       ip: "10.255.255.6",
@@ -40,7 +53,7 @@ Vagrant.configure("2") do |config|
       v.name = "vagrant_httpd_php"
       v.linked_clone = true
     end
-    httpd_php.vm.box = "centos/6"
+    httpd_php.vm.box = "learnway/debian-squeeze"
     httpd_php.vm.network "private_network",
       virtualbox__intnet: "mgmt_net",
       ip: "10.255.255.8",
@@ -51,7 +64,7 @@ Vagrant.configure("2") do |config|
       v.name = "vagrant_client"
       v.linked_clone = true
     end
-    client.vm.box = "centos/6"
+    client.vm.box = "learnway/debian-squeeze"
     client.vm.network "private_network",
       virtualbox__intnet: "mgmt_net",
       ip: "10.255.255.9",
@@ -62,7 +75,7 @@ Vagrant.configure("2") do |config|
       v.name = "vagrant_mysql"
       v.linked_clone = true
     end
-    mysql.vm.box = "centos/6"
+    mysql.vm.box = "learnway/debian-squeeze"
     mysql.vm.network "private_network",
       virtualbox__intnet: "mgmt_net",
       ip: "10.255.255.10",
@@ -73,7 +86,7 @@ Vagrant.configure("2") do |config|
       v.name = "vagrant_httpd"
       v.linked_clone = true
     end
-    httpd.vm.box = "centos/6"
+    httpd.vm.box = "learnway/debian-squeeze"
     httpd.vm.network "private_network",
       virtualbox__intnet: "mgmt_net",
       ip: "10.255.255.11",
