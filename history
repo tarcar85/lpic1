@@ -214,9 +214,53 @@ https://www.vagrantup.com/downloads.html
 https://www.virtualbox.org/wiki/Downloads
 https://git-scm.com/download/
 
+https://www.vagrantup.com/docs/virtualbox/configuration.html
+https://www.vagrantup.com/docs/virtualbox/networking.html
+https://www.vagrantup.com/docs/boxes.html
+https://app.vagrantup.com/debian
+https://app.vagrantup.com/centos
+https://app.vagrantup.com/ubuntu
+
+https://en.wikipedia.org/wiki/Debian
+https://en.wikipedia.org/wiki/Debian_version_history
+
+
 vagrant plugin install virtualbox
-git clone https://gicd lpic1/thub.com/secobau/lpic1
-cd lpic1 && vagrant up --parallel
+mkdir Vagrant && cd Vagrant && git clone https://github.com/secobau/lpic1
+cp lpic1/Vagrantfile . && vagrant up --parallel
 vagrant status
-vagrant ssh mgmt -c ' git version '
+vagrant ssh mgmt -c ' hostname && date '
 vagrant destroy -f
+
+https://en.wikipedia.org/wiki/Runlevel
+https://en.wikipedia.org/wiki/Systemd
+
+test -d lpic1 && cd lpic1 && git pull
+test -d lpic1 || git clone https://github.com/secobau/lpic1 && cd lpic1
+sudo cp -rv * /
+sudo chmod +x /usr/local/sbin/tcpdump.sh
+sudo systemctl enable tcpdump.service
+sudo init 6
+
+sudo grep tcpdump.sh /var/log/messages | less
+sudo tail --follow /var/log/messages | grep tcpdump.sh
+sudo grep tcpdump.sh /var/log/messages | tail
+pidof tcpdump
+sudo tcpdump -XXn -r /var/log/tcpdump/*.pcap | less 
+
+nohup ./script &
+./script &
+nohup ./script
+
+dpkg -l | tee list-of-installed-packages
+dpkg -S /bin/ls
+dpkg -S $( which host )
+sudo dpkg -i paquete.deb && sudo apt-get install -f
+sudo dpkg -r paquete.deb
+sudo apt-get autoremove && sudo apt-get autoclean && sudo apt-get clean
+sudo apt-get install deborphan -y
+sudo apt-get purge -y $( sudo deborphan )
+apt-cache search host | grep ^host
+
+sudo apt-get install -y apt-build
+sudo apt-build install -y nginx 
