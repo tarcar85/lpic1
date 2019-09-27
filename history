@@ -248,3 +248,19 @@ sudo grep tcpdump.sh /var/log/messages | tail
 pidof tcpdump
 sudo tcpdump -XXn -r /var/log/tcpdump/*.pcap | less 
 
+nohup ./script &
+./script &
+nohup ./script
+
+dpkg -l | tee list-of-installed-packages
+dpkg -S /bin/ls
+dpkg -S $( which host )
+sudo dpkg -i paquete.deb && sudo apt-get install -f
+sudo dpkg -r paquete.deb
+sudo apt-get autoremove && sudo apt-get autoclean && sudo apt-get clean
+sudo apt-get install deborphan -y
+sudo apt-get purge -y $( sudo deborphan )
+apt-cache search host | grep ^host
+
+sudo apt-get install -y apt-build
+sudo apt-build install -y nginx 
