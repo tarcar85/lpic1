@@ -226,7 +226,7 @@ https://en.wikipedia.org/wiki/Debian_version_history
 
 
 vagrant plugin install virtualbox
-mkdir Vagrant && cd Vagrant && git clone https://github.com/secobau/lpic1
+mkdir Vagrant && cd Vagrant && git clone https://github.com/tarcar85/lpic1
 cp lpic1/Vagrantfile . && vagrant up --parallel
 vagrant status
 vagrant ssh mgmt -c ' hostname && date '
