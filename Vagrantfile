@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
       v.memory = 512
       v.cpus = 1
     end
-    mgmt.vm.box = "learnway/debian/buster64"
+    mgmt.vm.box = "debian/buster64"
     mgmt.vm.network "private_network",
       virtualbox__intnet: "mgmt_net",
       ip: "10.255.255.2",
